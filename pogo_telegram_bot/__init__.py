@@ -5,15 +5,16 @@ from logging import INFO, basicConfig
 from os import makedirs, linesep
 from os.path import join, isdir, isfile
 
-from telegram.ext import Application, ApplicationBuilder
+from telegram.ext import Application, ApplicationBuilder, PicklePersistence
 
 from pogo_telegram_bot.services.config import Config
 from pogo_telegram_bot.services.translations import init_app as init_translations
 from pogo_telegram_bot.controllers import init_app as init_routes
 
-VERSION: Final = '0.1.0'
+VERSION: Final = '0.1.1'
 INSTANCE_PATH: Final = 'instance'
 CONFIG_FILENAME: Final = 'config.py'
+PERSISTENCE_FILENAME: Final = 'persistence.bin'
 
 basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -54,7 +55,12 @@ def create_app(options: dict | None = None) -> Application | None:
         config.from_mapping(options)
 
     # Build application
-    app = ApplicationBuilder().token(config['TOKEN']).build()
+    app = (
+        ApplicationBuilder()
+        .token(config['TOKEN'])
+        .persistence(persistence=PicklePersistence(filepath=join(INSTANCE_PATH, PERSISTENCE_FILENAME)))
+        .build()
+    )
     app.config = config
 
     # Services initializations
