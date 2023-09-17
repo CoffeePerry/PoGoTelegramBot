@@ -1,0 +1,88 @@
+# Italian translations for PoGoTelegramBot.
+# Copyright (C) 2023 CoffeePerry
+# This file is distributed under the same license as the PoGoTelegramBot
+# project.
+# Simone Perini <perinisimone98@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PoGoTelegramBot 0.1.0\n"
+"Report-Msgid-Bugs-To: perinisimone98@gmail.com\n"
+"POT-Creation-Date: 2023-09-17 09:06+0200\n"
+"PO-Revision-Date: 2023-09-16 10:06+0200\n"
+"Last-Translator: Simone Perini <perinisimone98@gmail.com>\n"
+"Language: it\n"
+"Language-Team: it <perinisimone98@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: pogo_telegram_bot/controllers/base.py:23
+msgid "Welcome"
+msgstr "Benvenuto"
+
+#: pogo_telegram_bot/controllers/base.py:24
+msgid ""
+"If you don't know where to start I recommend you start by typing the "
+"command"
+msgstr "Se non sai da dove partire ti consiglio di iniziare digitando il comando"
+
+#: pogo_telegram_bot/controllers/base.py:30
+#: pogo_telegram_bot/controllers/base.py:49
+#: pogo_telegram_bot/controllers/base.py:69
+#: pogo_telegram_bot/controllers/base.py:108
+#: pogo_telegram_bot/controllers/base.py:127
+msgid "I encountered an internal error. Please try again."
+msgstr "Ho stato riscontrato un errore interno. Riprova per favore."
+
+#: pogo_telegram_bot/controllers/base.py:44
+msgid "Bye"
+msgstr "Arrivederci"
+
+#: pogo_telegram_bot/controllers/base.py:63
+msgid ""
+"This Telegram bot assists Pokémon Go trainers. Try it now. Type /login to"
+" authenticate."
+msgstr ""
+"Questo bot di Telegram assiste gli allenatori di Pokémon Go. Provalo ora."
+" Digita /login per autenticarti."
+
+#: pogo_telegram_bot/controllers/base.py:85
+msgid ""
+"Wrong command! You need to add the language settings parameter (for "
+"example"
+msgstr ""
+"Comando errato! Occorre aggiungere il parametro relativo alle "
+"impostazioni della lingua (per esempio"
+
+#: pogo_telegram_bot/controllers/base.py:94
+msgid ""
+"Wrong command! The parameter relating to the language to be set must be "
+"added."
+msgstr ""
+"Comando errato! Occorre aggiungere il parametro relativo alla lingua da "
+"impostare."
+
+#: pogo_telegram_bot/controllers/base.py:95
+msgid "The possible values are"
+msgstr "I valori possibili sono"
+
+#: pogo_telegram_bot/controllers/base.py:99
+#: pogo_telegram_bot/controllers/base.py:103
+msgid "Language "
+msgstr "Lingua "
+
+#: pogo_telegram_bot/controllers/base.py:99
+msgid " not supported."
+msgstr " non supportata."
+
+#: pogo_telegram_bot/controllers/base.py:103
+msgid " set successfully."
+msgstr " impostata con successo."
+
+#: pogo_telegram_bot/controllers/base.py:122
+msgid "Sorry, I don't know this command"
+msgstr "Scusami, non conosco questo comando"
+

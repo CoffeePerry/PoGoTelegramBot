@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pogotelegrambot"
+version = "0.1.0"
+description = "The Telegram bot to assist Pokémon Go trainers."
+authors = ["Simone Perini <perinisimone98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.5"
+babel = "^2.12.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
