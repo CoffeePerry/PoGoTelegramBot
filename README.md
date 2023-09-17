@@ -1,7 +1,32 @@
 # PoGoTelegramBot
  The Telegram bot to assist Pokémon Go trainers.
 
-## Translation
+## Quick Start
+
+In order to start the project quickly, you need to follow the following steps:
+
+1. Setup [instance](#instance);
+2. Compile translations: `pybabel compile -d pogo_telegram_bot/translations`.
+
+## Instance
+
+The project requires the **config.py** file to exist in the **instance** folder, it should look like this:
+
+```Python
+"""config file."""
+
+from typing import Final
+
+# python-telegram-bot
+TOKEN: Final = '[TELEGRAM_TOKEN]'
+
+# i18n
+LANGUAGES: Final = ['it']
+```
+
+**[TELEGRAM_TOKEN]** must be replaced with your Telegram bot token issued by [BotFather](https://t.me/botfather).
+
+## Translations
 
 ### Setup New Locale
 
@@ -18,7 +43,7 @@ After creating the translations in the file *pogo_telegram_bot/translations/it/L
 pybabel compile -d pogo_telegram_bot/translations
 ```
 
-### Update
+### Update Translations
 
 To extract and update the sentences to translate run:
 
